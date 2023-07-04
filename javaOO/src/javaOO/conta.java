@@ -1,13 +1,14 @@
 package javaOO;
 
 public class conta {
-	double saldo;
+	private double saldo;
 	int agencia;
 	int numero;
-	String titular;
+	Cliente titular;
 	
 	public void deposita(double valor) {
-		this.saldo = this.saldo + valor;}
+		this.saldo = this.saldo + valor;
+		}
 	
 	void saca(double valor) {
 		if(saldo >= valor) {
@@ -24,5 +25,9 @@ public class conta {
 	        return true;
 	    }
 	    return false;
+	}
+	
+	public double pegaSaldo() {
+		return this.saldo;
 	}
 }

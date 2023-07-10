@@ -2,10 +2,8 @@ package bytebank_herdado;
 
 public class testeFuncionario {
 	public static void main(String[] args) {
-		Funcionario bruno = new Funcionario();
+		Funcionario bruno = new AuxAdm();
 		Gerente Sousa = new Gerente();
-		//caso não seja escrito um construtor, o compilador insere um
-		//por isso a chamada acima funciona
 		
 		//senha para teste
 		int senha = 12;
